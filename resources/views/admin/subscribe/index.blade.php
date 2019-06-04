@@ -38,6 +38,7 @@
             @endforeach
             </tbody>
         </table>
+        {{ $subscribes->links() }}
         @else
         <div class="alert alert-info text-center">Nenhum inscrito cadastrado.</div>
         @endif

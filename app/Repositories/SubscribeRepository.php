@@ -13,7 +13,7 @@ class SubscribeRepository implements SubscribeRepositoryInterface
      */
     public function getAllSubscribes()
     {
-        return Subscribe::all();
+        return Subscribe::paginate(15);
     }
 
     /**
